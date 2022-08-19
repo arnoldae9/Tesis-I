@@ -1,0 +1,87 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage{tikz} 
+\usepackage{tikz-network}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm,algorithmic}
+\usetheme{CambridgeUS}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{natbib} 
+\title{Presentación Tesis I}
+\author{Lic. Arnoldo Del Toro Peña }
+\institute[UANL]{Universidad Autónoma de Nuevo León}
+\titlegraphic{ \includegraphics[width=2cm]{R.jpg} \hfill \includegraphics[width=4cm]{fime.png} }
+
+\newtheorem{definicion}{Definición}
+\newcommand{\ql}{Q-Learning}
+
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
+
+%\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=right} estas lineas se activan cuando la presentación será en un monitor externo.
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}{Tabla de contenidos}
+		\tableofcontents
+	\end{frame}
+	
+	\section{Introducción}
+	
+	\begin{frame}{Introducción}
+		En un problema de hormigón se tiene un enfrentamiento en distintos puntos de vista del problema.
+		
+		\begin{enumerate}
+			\item Vehículos.
+			\item Rutas.
+			\item Ventanas de tiempo.
+			\item Clientes.
+		\end{enumerate}
+	
+	\end{frame} 
+	
+	\begin{frame}{Vehículos}
+		Características de los vehículos:
+		\begin{enumerate}
+			\item Carga.
+			\item tiempo de llegada y salida.
+		\end{enumerate}
+	\end{frame}
+
+	\begin{frame}{Rutas}
+		Las rutas es una parte importante a determinar, ya que se tiene una cantidad de clientes a satisfacer y varios centros de abastecimiento en los cuales el vehículo reabastecer su carga.
+	\end{frame}
+	
+	\begin{frame}{Ventanas de tiempo}
+		La mayor problemática del problema.
+		Restricciones a tomar:
+		\begin{enumerate}
+			\item Hora de salida del centro de abastecimiento.
+			\item Hora de llegada con cliente.
+			\item Tiempo de espera para recibir el último envío.
+			\item Número de envíos.
+		\end{enumerate}
+	\end{frame}
+	
+	\begin{frame}{\ql}
+		Actualmente se tienen resultado tomando acciones aleatorias.
+		\vspace{0.2 in}
+		Se esta trabajando en la implementación de acciones no aleatorias.
+				\vspace{0.2 in}
+		En un futuro cercano implementaremos acciones en base a heurísticas.
+	\end{frame}
+		
+	
+	
+
+
+	
+
+\end{document}
